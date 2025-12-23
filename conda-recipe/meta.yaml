@@ -1,0 +1,49 @@
+{% set name = "sailorsuperstitions" %}
+{% set version = "0.1.0" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  path: ..
+
+build:
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
+  number: 0
+
+requirements:
+  host:
+    - python >=3.8
+    - pip
+    - setuptools
+  run:
+    - python >=3.8
+
+test:
+  imports:
+    - sailorsuperstitions
+  commands:
+    - python -c "from sailorsuperstitions import SuperstitionChecker; checker = SuperstitionChecker()"
+  requires:
+    - pytest
+  source_files:
+    - tests
+  commands:
+    - pytest tests/
+
+about:
+  home: https://github.com/yourusername/sailorsuperstitions
+  summary: 'A package to check sailing conditions against maritime superstitions'
+  description: |
+    sailorsuperstitions helps sailors avoid doom by checking their
+    sailing conditions against a comprehensive database of maritime
+    superstitions. Features include curse level calculation and
+    personalized sailing fortunes.
+  license: MIT
+  license_file: LICENSE
+
+extra:
+  recipe-maintainers:
+    - yourusername

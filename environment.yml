@@ -1,0 +1,15 @@
+name: sailorsuperstitions
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - setuptools
+  - pytest
+  - black
+  - ruff
+  # Development dependencies
+  - ipython
+  - pip:
+    - -e .  # This installs your package in editable mode

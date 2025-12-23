@@ -1,0 +1,60 @@
+{
+  "superstitions": [
+    {
+      "id": "bananas",
+      "description": "Bananas on board",
+      "severity": 10,
+      "message": "CRITICAL: Bananas detected! Immediate disposal required!",
+      "category": "cargo"
+    },
+    {
+      "id": "whistle",
+      "description": "Whistling on deck",
+      "severity": 7,
+      "message": "You've summoned a storm! Hope you're happy.",
+      "category": "behavior"
+    },
+    {
+      "id": "rename_boat",
+      "description": "Renamed vessel without ceremony",
+      "severity": 8,
+      "message": "The sea gods are confused. Perform denaming ceremony immediately!",
+      "category": "vessel"
+    },
+    {
+      "id": "friday_departure",
+      "description": "Setting sail on Friday",
+      "severity": 6,
+      "message": "Friday departure detected. Poseidon is mildly annoyed.",
+      "category": "timing"
+    },
+    {
+      "id": "redhead",
+      "description": "Redhead spotted before boarding",
+      "severity": 4,
+      "message": "Redhead encounter logged. Speak to them first to break curse!",
+      "category": "encounters"
+    },
+    {
+      "id": "upside_down_hatch",
+      "description": "Hatch cover placed upside down",
+      "severity": 5,
+      "message": "Inverted hatch detected. Your luck is literally upside down.",
+      "category": "vessel"
+    },
+    {
+      "id": "womens_presence",
+      "description": "Women on board",
+      "severity": -5,
+      "message": "Actually, women calm the seas. +5 luck bonus!",
+      "category": "crew"
+    },
+    {
+      "id": "black_cat",
+      "description": "Black cat on board",
+      "severity": -3,
+      "message": "Ship's cat detected. Good fortune ahead!",
+      "category": "encounters"
+    }
+  ]
+}
